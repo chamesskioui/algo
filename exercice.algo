@@ -1,0 +1,24 @@
+ALGORITHM algorithm_name
+VAR
+ n:INTEGER;
+ res:STRING;
+BEGIN
+write("give me a number between 1 and 12")
+read(n)
+   SWITCH (n) DO
+    case 1 : res:="january"
+    case 2 : res:="february"
+    case 3 : res:="march"
+    case 4 : res:="april"
+    case 5 : res:="may"
+    case 6 : res:="june"
+    case 7 : res:="july"
+    case 8 : res:="august"
+    case 9 : res:="september"
+    case 10 : res:="october"
+    case 11 : res:="november"
+    case 12 : res:="december"
+    default : res:="the number is not between 1 and 12"
+   END_SWITCH
+   write("the month is: ",res)
+END
